@@ -1,6 +1,7 @@
 <?php
 	include "utils/startsession.php";
 	include "utils/database.php";
+	include_once "utils/error.php";
 	include "utils/User.php";
 
 ?>
@@ -9,6 +10,11 @@
 	$from = @$_GET['from'];
 	$to = @$_GET['to'];
 	$trip_date = @$_GET['trip-date'];
+
+	if (!User::isLoggedIn())
+		ErrorHandler::error(9, 'login.php');
+	$user = User::getUserFromSession();
+	
 ?>
 
 <!DOCTYPE html>
@@ -137,12 +143,15 @@
 						<?php while($row=mysqli_fetch_assoc($result)): ?>
 
 							<?php
-								$sql = "SELECT seats FROM bookings where flight_id=".$row['id'];
+								$flight_id = $row['id'];
+								$sql = "SELECT seats FROM bookings where flight_id=$flight_id";
 								$seat_results = mysqli_query($db, $sql);
 								$seatsBooked = 0;
 								if (mysqli_num_rows($seat_results) > 0)
 									while ($seats = mysqli_fetch_assoc($seat_results)) $seatsBooked += $seats['seats'];
 								$soldOut= $seatsBooked==$row['seats'];
+								$sql = "SELECT seats FROM bookings where user_id=$user->userid AND flight_id=$flight_id LIMIT 1";
+								$userBooked = mysqli_query($db, $sql);
 							?>
 
 							<div class="airline-details">
@@ -157,9 +166,15 @@
 										seat<?php echo ($row['seats']-$seatsBooked == 1)?'':'s'?> remain
 									</p>
 								</div>
-								<button <?php if($soldOut) echo "disabled"?> class="btn-book bg-blue right" onclick="openBookDialog(<?php echo $row['id']?>)">
-									Book now
-								</button>
+								<?php if (mysqli_num_rows($userBooked) == 1): ?>
+									<button class="btn-book bg-blue right">Edit</button>
+								<?php elseif ($soldOut): ?>
+									<span class=right>Sold Out</span>
+								<?php else: ?>
+									<button <?php if($soldOut) echo "disabled"?> class="btn-book bg-blue right" onclick="openBookDialog(<?php echo $row['id']?>)">
+										Book now
+									</button>
+								<?php endif; ?>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>

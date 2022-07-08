@@ -41,10 +41,10 @@
                 User:<?php echo $user->username;?>
             </div>
             <br>
-            <div>
+            <div class='list margin_left' >
             <?php if (mysqli_num_rows($result)!=0):?>
                 <?php while ($row = mysqli_fetch_assoc($result)):?>
-                <div class="list left margin_left">
+                <div class="left">
                     <div class="airline-details">
                         <div>
                             <h2 style='display: inline'><?php echo $row['name']; ?> - <span><?php echo $row['aeroplane_no']; ?></span></h2><br>

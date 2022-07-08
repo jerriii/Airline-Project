@@ -62,29 +62,42 @@
         <br><br>
         <div class="form-admin">
           <form method="post" action="airline.php">
-                    <label>Airline name:</label>&#9;
-                    <input type="text"  placeholder="Enter the Airline" name="name" required>
-
-                  <br>
-                    <label>Aeroplane number:</label>&#9;
-                    <input type="text"  placeholder="Enter aeroplane number" name="aeroplane_no" required>
-
-                  <br>
-                    <label>Departure:</label>&#9;
-                    <input type="text"  placeholder="Enter Departure" name="departure" required>
-                  <br>
-
-                    <label>Arrival:</label>&#9;
-                    <input type="text"  placeholder="Enter Arrival" name="arrival" required>
-                  <br>
-                    <label>Departure time:</label>&#9;
-                      <input type="date" name="departure_date" required>
-                      <input type="time" name="departure_time" required>
-                  <br>
-                    <label>Number of seats:</label>&#9;
-                      <input type="number" name="seats" min = 0 required>
-                  <br>
-                  <button type="submit"  name="submit" class="button-dialog">Submit</button>
+            <div class="form-dialog">
+              <div class="row">
+                <div class="col-25"><label>Airline name:</label></div>
+                <div class="col-75"><input type="text"  placeholder="Enter the Airline" name="name" required></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25"><label>Aeroplane number:</label></div>
+                <div class="col-75"><input type="text"  placeholder="Enter aeroplane number" name="aeroplane_no" required></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25"><label>Departure:</label></div>
+                <div class="col-75"><input type="text"  placeholder="Enter Departure" name="departure" required></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25"><label>Arrival:</label></div>
+                <div class="col-75"><input type="text"  placeholder="Enter Arrival" name="arrival" required></div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-25"><label>Departure time:</label></div>
+                <div class="col-75">
+                  <input type="date" name="departure_date" required>
+                  <input type="time" name="departure_time" required>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <label class="col-25">Number of seats:</label>
+                <div class="col-75"><input class="col-75" type="number" name="seats" min = 0 required></div>
+              </div>
+              <br>
+              <button type="submit"  name="submit" class="button-dialog">Submit</button>
+            </div>
           </form>
         </div>
       </dialog> 
