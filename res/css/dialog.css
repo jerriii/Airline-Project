@@ -1,0 +1,112 @@
+dialog.admin-dialog {
+    background-color: #000000af;
+    backdrop-filter: blur(1rem);
+    color: transparent;
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .form-admin {
+    color: antiquewhite;
+    font-family: sans-serif;
+  }
+
+  .form-admin input[type="text"], 
+  input[type="date"], 
+  input[type="time"],
+  input[type="number"] {
+    border: 2px solid #000;
+    font-family: sans-serif;
+    border-radius: 4px;
+    margin: 0.3rem 0rem;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+    .form-admin 
+    input[type="text"]:focus,
+    input[type="date"]:focus,
+    input[type="time"]:focus,
+    input[type="number"]:focus {
+  border-color: blueviolet;
+  }
+
+  /* button */
+  .button-dialog {
+      background-color: #e74c3c;
+      color: #f9ebff;
+      border: none;
+      border-radius: 10px;
+      padding: 0.5rem;
+      font-size: 20px;
+      cursor: pointer;
+      width: 13rem;
+      margin: 1rem 0 1.7rem 4.5rem;
+  }
+
+  button.close-dialog {
+  float: right;
+  margin-right: -1rem;
+  background: transparent;
+  color: antiquewhite;
+  border: transparent;
+  }
+
+    
+    
+  .popup {
+    width: 15rem;
+    background-color: #4169e1af;
+    backdrop-filter: blur(1rem);
+    border-radius: 0.5rem;
+    z-index: 1;
+    color: antiquewhite;
+    left: 50%;
+    text-align: center;
+    padding: 1rem;
+      
+  }
+  
+  .popup #booking_name {
+  font-size: 2rem;
+  margin: 0.5rem;
+  }
+
+  .close-dialog {
+  float: right;
+  margin-right: -1rem;
+  background: transparent;
+  color: antiquewhite;
+  border: transparent;
+  }
+
+  input#minus-seats, input#add-seats {
+    border-radius: 0.5rem;
+    border-color: lightslategray;
+    background-color: #4169e1;
+    padding: 0 0.5rem;
+    color: #ffffff;
+  } 
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 0.5rem;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 0.5rem;
+  }
+
+  .col-75 input {
+    width: 100%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

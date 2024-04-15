@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  .head {
+    width: min(100%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .loginphoto
+  {
+    background-image: url(../image/loginphoto.jpg) !important; 
+  }
+
+  .userphoto
+  {
+  background-image: url(../image/indexphoto.jpg); 
+  }
+
+  .adminphoto
+  {
+  background-image: url(../image/adminphoto.jpg);
+  }
+
+.navbar{
+    width: min(90%);
+    height: min(10%);
+    cursor: default;
+    margin: auto;
+}
+
+.icon{
+    width: 70%;
+}
+
+.logo{
+  font-size: 40px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+  margin-top: 5px
+}
+.logo a {
+  text-decoration: none;
+  color: inherit;
+}
+.logo.blue_color a:active {
+  color: #4169e1;
+}
+
+.logo.red_color a:active {
+  color: #e74c3c;
+}
+
+h2.logo.blue_color
+{
+  color: #4169e1;
+}
+
+h2.logo.red_color
+{
+  color: #e74c3c;
+}
+
+.menu-user ul,
+.menu-admin ul
+{
+    display: flex;
+    justify-content: right;  
+}
+
+.menu-user ul li, 
+.menu-admin ul li{
+  margin-left: 50px;
+  margin-top: 20px;
+  display: inline;
+  font-size: 20px;
+  white-space: nowrap ;
+}
+
+.menu-user ul li a,
+.menu-admin ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu-user ul li a:hover{
+  color: #4169e1;
+  cursor: pointer;
+}
+
+.menu-admin ul li a:hover{
+  color: #e74c3c;
+  cursor: pointer;
+}
+
+.data h1{
+  font-family: 'Times New Roman';
+  padding-left: 50px;
+  color: #000;
+}

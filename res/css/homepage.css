@@ -1,0 +1,210 @@
+/* user */
+.form .select-group .input-select{
+  font-family: sans-serif;
+  color: antiquewhite;
+  padding-left: 2px;
+}
+
+.profile_info {
+  color: antiquewhite;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.select-group {
+  position: relative;
+  display: flex;
+  margin: 1.7rem;
+  flex-direction: column;
+}
+
+.form .select-group .option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+
+  display: block;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 2.7rem;
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-select {
+  background-color: #0c2461;
+  color: #f9ebff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  padding: 0.5rem 3.9rem;
+  cursor: pointer;
+}
+
+/* calendar icon */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* admin */
+
+.contents, .container {
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%);
+  backdrop-filter: blur(0.5rem);
+  position: absolute;
+  display: inline-block;
+  border-radius: 1rem;
+  /* overflow: auto; */
+  margin: 2rem 6rem;
+  padding: 0.7rem;
+  height: 80%;
+}
+
+/* margin */
+.margin_left {
+  margin-left: 12.4rem;
+}
+/*button */
+
+.bg-red {
+  background: #c64c3c;
+
+}
+
+.bg-blue {
+  background: #4169e1;
+}
+
+.btn-primary, .table-admin tbody tr button, .btn-book {
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.4rem 1rem;
+  transition: transform 0.3s ease;
+} 
+
+.table-admin tbody tr button a{
+color: #f9ebff;
+text-decoration: none;
+}
+
+button.btn-primary:hover, 
+.table-admin tbody tr button:hover, .btn-book:hover {
+background: linear-gradient(40deg, #025091 60%, #71C5EE);
+transform: translate(0,-3px);
+box-shadow: 0.1rem -0.1rem 1.1rem 0 #025091, -0.1rem 0.1rem 1.1rem 0 #71C5EE;
+transition: transform 0.5s ease;
+}
+
+.table-admin tbody tr button:hover{
+  background: linear-gradient(40deg, #ff0a45 60%, #ffaf98) !important;
+  box-shadow: 0.1rem -0.1rem 1.1rem 0 #ff0a45, -0.1rem 0.1rem 1.1rem 0 #ffaf98 !important;
+}
+
+/*Admin table */
+
+.table-user, 
+.table-admin {
+  color: antiquewhite;
+  margin: 1rem 0;
+  border-collapse: collapse;
+  font-size: 1rem;
+  font-family: sans-serif;
+  table-layout: fixed;
+  display: block;
+  border-color: transparent;
+ }
+
+ .table-user thead, 
+ .table-admin thead {
+  height: 6.2rem;
+  display: table;
+  width: 100%;
+ }
+ .table-user thead tr, 
+ .table-admin thead tr {
+  background-color: #e74c3c;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+ }
+
+ .table-user tbody, 
+ .table-admin tbody {
+  height: 25.8rem;
+  display: block;
+  overflow: auto;
+ 
+ }
+
+ .table-user tbody tr, 
+ .table-admin tbody tr {
+  border-bottom: 1px solid #e74c3c30;
+ }
+
+ .table-user tbody tr:nth-of-type(even), 
+ .table-admin tbody tr:nth-of-type(even) {
+  background-color:#00000030;
+  }
+
+  .table-user th, .table-user td, 
+  .table-admin th, .table-admin td {
+    padding: 1.3rem;
+    text-align: center;
+ }
+ 
+ /* scrollbar */
+ ::-webkit-scrollbar {
+  display: none;
+ }
+
+/* About us */
+.par {
+  padding: 3rem 10rem;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.content {
+  color: #000;
+  text-align: center;
+}
+
+/* search */
+
+.list {
+  display: flex;
+  width: 65%; 
+  background-color: #00000099;
+  backdrop-filter: blur(0.5rem);
+  padding: 1rem; 
+  height: 68vh;
+  border-radius: 1rem;
+  overflow: auto;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.airline-details {
+  background-color: #00000080;
+  color: #fff;
+  border-radius: 0.7rem; 
+  display: flex;
+  padding: 1rem; 
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.airline-details:nth-of-type(even) {
+  background-color: transparent;
+}
