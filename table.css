@@ -1,0 +1,36 @@
+.table {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: min(85vh);
+    width: min(95vw);
+    overflow: auto;
+    border-radius: 1rem;
+    background-color: gainsboro;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+
+}
+.table-user {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-user td, .table-user th {
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 8px;
+}
+
+.table-user tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-user th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #5EC268;
+    color: #1f1f1f;
+}
