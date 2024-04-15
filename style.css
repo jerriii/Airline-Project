@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {            
+    display: flex;
+    height: 100vh;
+    background-color: #5EC268;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    align-self: center;
+    padding: 0.5rem;
+}
+
+
+.form-box {
+    min-width: 380px;
+    min-height: 550px;
+    position: relative;
+    background: #F3F1E9;
+    padding: 5px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background-image: linear-gradient(to right, #5ec268, #55cc69, #4ad66b, #38e16d, #12eb6f);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}
+
+.inp-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.inp {
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+
+}
+
+.sub {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 1.5rem auto;
+    background-image: linear-gradient(to right bottom, #5ec268, #55cc69, #4ad66b, #38e16d, #12eb6f);
+    border: 0;
+    outline: none;
+    border-radius: 30px;       
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 67px;
+}
+
+.custom-file-input {
+    color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.custom-file-input::before {
+    content: 'Select an image';
+    color: #1f1f1f;
+    display: inline-block;
+    background: linear-gradient(to right bottom, #5ec268, #55cc69, #4ad66b, #38e16d, #12eb6f);
+    border: 1px solid #999;
+    border-radius: 30px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.custom-file-input:active {
+    outline: 0;
+}
+
+.custom-file-input:active::before {
+    background: linear-gradient(to right bottom, #5ec268, #55cc69, #4ad66b, #38e16d, #12eb6f);; 
+}

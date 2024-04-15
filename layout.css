@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    width: min(100%);
+    height: 10vh;
+    flex-direction: row;
+    cursor: default;
+    background-color: #5EC268;
+    align-items: center;
+}
+
+.icon{
+    padding: 1rem ;
+    width: max(75%);
+}
+.user-details {
+    width: min(20%);
+}
+  
+.user-details ul {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.user-details ul li {
+    display: inline-flex;
+    font-size: 1.1rem;
+    margin: 1rem;
+    white-space: nowrap;
+}
+
+.user-details ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+img {
+    max-width: 135px;
+    max-height: 135px;
+}
+
+.main {
+    display: flex;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    height: min(85vh);
+    column-gap: 0.5rem;
+    overflow: auto;
+    justify-content: flex-start;
+    background-color: transparent;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.box-details {
+    background-color: #5EC268af;
+    color: #1f1f1f;
+    width: min(225px);
+    height: min(300px);
+    border-radius: 1rem; 
+    display: flex;
+    padding: 1rem; 
+    margin-bottom: 0.5rem;
+    align-items: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn {
+    background: linear-gradient(to right, #5ec268, #55cc69, #4ad66b, #38e16d, #12eb6f);
+    position: relative;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    color: #1f1f1f;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 0.4rem 1rem;
+} 
+
+button {
+    margin: 1rem auto;
+    padding: 0.5rem 1.5rem;
+    color: antiquewhite;
+    font-family: sans-serif;
+    background: #00ab66;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+.del {
+    background: #f00e50;
+}
